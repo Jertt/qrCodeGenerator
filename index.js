@@ -11,8 +11,8 @@ generateBtn.addEventListener("click", () => {
     if(!qrValue || preValue === qrValue) return;
     preValue = qrValue;
     generateBtn.innerText = "Generating QR Code...";
-    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&format=svg&data=hahahaha${qrValue}`;
-    aHref.href = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&format=svg&data=hahahaha${qrValue}&download=1`;
+    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&format=svg&data=${qrValue}`;
+    aHref.href = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&format=svg&data=${qrValue}&download=1`;
     qrImg.addEventListener("load", () => {
         wrapper.classList.add("active");
         generateBtn.innerText = "Generate QR Code";
