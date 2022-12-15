@@ -3,6 +3,7 @@ qrInput = wrapper.querySelector(".form input"),
 generateBtn = wrapper.querySelector(".form button"),
 downloadBtn = wrapper.querySelector(".form #down"),
 qrImg = wrapper.querySelector(".qr-code img"),
+qrDuo = document.getElementById("qrDyy"),
 aHref = wrapper.querySelector(".form a");
 let preValue;
 
@@ -16,6 +17,7 @@ generateBtn.addEventListener("click", () => {
     qrImg.addEventListener("load", () => {
         wrapper.classList.add("active");
         generateBtn.innerText = "Generate QR Code";
+        qrDuo.style.display = "none";
     });
 });
 
