@@ -16,6 +16,8 @@ body{
   vertical-align: middle;
   max-width: max-content;
   max-height: max-content;
+  /* max-height: 100%; */
+  overflow: auto;
   margin: auto;
   padding: 0 10px;
   background: #000000;
@@ -23,7 +25,7 @@ body{
 .logo {
   width: 300px;
   margin: auto;
-  padding: 20px 0px 20px 0px;
+  /* padding: 20px 0px 20px 0px; */
 }
 /* .wrapper{
   height: 383px;
@@ -127,10 +129,10 @@ p#qrDyy{
 
 @media (max-width: 430px){
   .logo {
-    width: 220px;
+    width: 200px;
   }
   .wrapper{
-    height: 400px;
+    height: 428px;
     max-height: auto;
     max-width: fit-content;
     padding: 16px 20px;
